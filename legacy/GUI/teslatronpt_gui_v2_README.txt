@@ -1,13 +1,13 @@
 TeslatronPT GUI v2
 
 机器拓扑（三台独立仪器，模块号已在实际工控机上核实）：
-  iTC-VTI   TCPIP0::192.168.1.10::7020::SOCKET
+  iTC-VTI   TCPIP0::192.168.1.113::7020::SOCKET
     VTI 浴槽温度（背景）     DB6.T1
     交换气气压                DB3.P1
-  iTC-Probe TCPIP0::192.168.1.11::7020::SOCKET
+  iTC-Probe TCPIP0::192.168.1.114::7020::SOCKET
     Probe（样品）温度         DB8.T1
     样品精细控温回路 TSET    发到本机
-  iPS       TCPIP0::192.168.1.12::7020::SOCKET
+  iPS       TCPIP0::192.168.1.115::7020::SOCKET
     Magnet    GRPZ
 
 物理背景与联动控温：

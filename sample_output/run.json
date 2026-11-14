@@ -3,9 +3,9 @@
   "software": "Oxford Sequence Studio 1.6.3",
   "simulation": true,
   "config": {
-    "vti_host": "192.168.1.10",
-    "probe_host": "192.168.1.11",
-    "ips_host": "192.168.1.12",
+    "vti_host": "192.168.1.113",
+    "probe_host": "192.168.1.114",
+    "ips_host": "192.168.1.115",
     "port": 7020,
     "io_timeout_s": 5.0,
     "source_address": "GPIB0::14::INSTR",

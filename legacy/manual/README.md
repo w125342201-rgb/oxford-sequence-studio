@@ -11,15 +11,15 @@
 
 | 设备 | 控制器 / 接口 | 资源字符串 | 协议 |
 |------|--------------|------------|------|
-| VTI 浴温 + 交换气气压 | Mercury iTC-VTI | `TCPIP0::192.168.1.10::7020::SOCKET` | Oxford Mercury `READ:DEV:` / `SET:DEV:` |
-| 探针温度 + 精细控温 | Mercury iTC-Probe | `TCPIP0::192.168.1.11::7020::SOCKET` | Oxford Mercury `READ:DEV:` / `SET:DEV:` |
-| 励磁超导磁体 | Mercury iPS（组 `GRPZ`） | `TCPIP0::192.168.1.12::7020::SOCKET` | Oxford Mercury `READ:DEV:` / `SET:DEV:` |
+| VTI 浴温 + 交换气气压 | Mercury iTC-VTI | `TCPIP0::192.168.1.113::7020::SOCKET` | Oxford Mercury `READ:DEV:` / `SET:DEV:` |
+| 探针温度 + 精细控温 | Mercury iTC-Probe | `TCPIP0::192.168.1.114::7020::SOCKET` | Oxford Mercury `READ:DEV:` / `SET:DEV:` |
+| 励磁超导磁体 | Mercury iPS（组 `GRPZ`） | `TCPIP0::192.168.1.115::7020::SOCKET` | Oxford Mercury `READ:DEV:` / `SET:DEV:` |
 | Keithley 6221 电流源 | GPIB / USB | `GPIB0::12::INSTR`（或 Keithley USB） | SCPI |
 | Keithley 2182A 纳伏表 | GPIB / USB | `GPIB0::3::INSTR`（或 Keithley USB） | SCPI |
 | SRS SR830 锁放 | GPIB | `GPIB0::8::INSTR` | SRS 4-字符指令 |
 
-> 温控为**两台独立的 Mercury iTC**（iTC-VTI 192.168.1.10、iTC-Probe 192.168.1.11）
-> + 一台 iPS（192.168.1.12），均走 7020 端口，可用 `*IDN?` 回读确认。
+> 温控为**两台独立的 Mercury iTC**（iTC-VTI 192.168.1.113、iTC-Probe 192.168.1.114）
+> + 一台 iPS（192.168.1.115），均走 7020 端口，可用 `*IDN?` 回读确认。
 > 物理背景：样品杆插在 VTI 中，VTI 提供背景温度与交换气气压，probe 温控仪
 > 精细控温；样品温度以 probe（DB8.T1）为准。联动控温规则：probe TSET=T，
 > VTI TSET=T−Δ，Δ=1.0 K（T≥10 K）/ 0.2 K（T<10 K）。
@@ -35,7 +35,7 @@
 
 ## 2. 模块 → 指令映射
 
-### 励磁磁铁（组 `GRPZ`，位于 192.168.1.12）
+### 励磁磁铁（组 `GRPZ`，位于 192.168.1.115）
 | 功能 | 指令 |
 |------|------|
 | 置目标电流 | `SET:DEV:GRPZ:PSU:SIG:CSET:<A>` |
@@ -54,17 +54,17 @@
 > 软件配置），`FSET`（T）与 `RFST`（T/min）只**使用**该内部校准换算，本工程
 > 任何命令都**不写入**校准参数（无 CAL 动词、无磁体系数 SET）。
 
-### VTI / 探针温度、压力（iTC-VTI 192.168.1.10 + iTC-Probe 192.168.1.11）
+### VTI / 探针温度、压力（iTC-VTI 192.168.1.113 + iTC-Probe 192.168.1.114）
 | 功能 | 指令 | 位置 |
 |------|------|------|
-| VTI 温度 | `READ:DEV:DB6.T1:TEMP:SIG:TEMP` | iTC-VTI (192.168.1.10) |
-| 探针温度 | `READ:DEV:DB8.T1:TEMP:SIG:TEMP` | iTC-Probe (192.168.1.11) |
-| 探针控温设定 | `SET:DEV:DB8.T1:TEMP:LOOP:TSET:<K>` | iTC-Probe (192.168.1.11) |
-| VTI 控温设定 | `SET:DEV:DB6.T1:TEMP:LOOP:TSET:<K>` | iTC-VTI (192.168.1.10) |
+| VTI 温度 | `READ:DEV:DB6.T1:TEMP:SIG:TEMP` | iTC-VTI (192.168.1.113) |
+| 探针温度 | `READ:DEV:DB8.T1:TEMP:SIG:TEMP` | iTC-Probe (192.168.1.114) |
+| 探针控温设定 | `SET:DEV:DB8.T1:TEMP:LOOP:TSET:<K>` | iTC-Probe (192.168.1.114) |
+| VTI 控温设定 | `SET:DEV:DB6.T1:TEMP:LOOP:TSET:<K>` | iTC-VTI (192.168.1.113) |
 | 变温速率 | `SET:DEV:<模块>.<通道>:TEMP:LOOP:RSET:<K/min>` | 两 iTC 各自回路 |
 | 斜坡开关 | `SET:DEV:<模块>.<通道>:TEMP:LOOP:RENA:ON\|OFF` | 两 iTC 各自回路 |
-| 压力 | `READ:DEV:DB3.P1:PRES:SIG:PRES` | iTC-VTI (192.168.1.10) |
-| 压力设定 | `SET:DEV:DB3.P1:TEMP:LOOP:TSET:<mbar>` | iTC-VTI (192.168.1.10)（针阀控温回路挂在 TEMP 块，PRES 仅回读） |
+| 压力 | `READ:DEV:DB3.P1:PRES:SIG:PRES` | iTC-VTI (192.168.1.113) |
+| 压力设定 | `SET:DEV:DB3.P1:TEMP:LOOP:TSET:<mbar>` | iTC-VTI (192.168.1.113)（针阀控温回路挂在 TEMP 块，PRES 仅回读） |
 
 > 模块名（DB8/DB6/DB3）已在实机上核实；
 > 变温速率 RENA 为控制回路级、只能远程设置（Mercury iTC 手册 §4.8）。
@@ -114,8 +114,8 @@ from sr830.sr830_fixed import SR830
 import pyvisa
 
 # 温度 + 励磁（无需 VISA）
-cryo = TeslatronPT(itc_vti_host="192.168.1.10", itc_probe_host="192.168.1.11",
-                   ips_host="192.168.1.12")
+cryo = TeslatronPT(itc_vti_host="192.168.1.113", itc_probe_host="192.168.1.114",
+                   ips_host="192.168.1.115")
 r = cryo.readings()
 print(r.vti_temperature_k)    # VTI 温度 (K)
 print(r.probe_temperature_k)  # 探针温度 (K)
@@ -190,5 +190,5 @@ from sr830.sr830_fixed import SR830
 > GUI 为独立 Tk 应用（`python GUI/teslatronpt_gui_v2.py`），内嵌自己的 Mercury
 > 传输层，不依赖本包；三套驱动模块各自可单独 import。
 
-> 说明：模块名（DB8/DB6/DB3）与三台控制器地址（iTC-VTI 192.168.1.10 /
-> iTC-Probe 192.168.1.11 / iPS 192.168.1.12）均已在实机上核实。
+> 说明：模块名（DB8/DB6/DB3）与三台控制器地址（iTC-VTI 192.168.1.113 /
+> iTC-Probe 192.168.1.114 / iPS 192.168.1.115）均已在实机上核实。

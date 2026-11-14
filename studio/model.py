@@ -14,8 +14,8 @@ SOURCE_MAX_COMPLIANCE_V = 105.0      # 6221 output compliance ceiling
 DEFAULT_SOURCE_CURRENT_A = 0.1       # fixed excitation for new measurement steps
 DEFAULT_FIELD_TOLERANCE_T = 0.01     # field readback tolerance for new field steps
 CONFIG = {
-    'vti_host': '192.168.1.10', 'probe_host': '192.168.1.11',
-    'ips_host': '192.168.1.12', 'port': 7020, 'io_timeout_s': 5.0,
+    'vti_host': '192.168.1.113', 'probe_host': '192.168.1.114',
+    'ips_host': '192.168.1.115', 'port': 7020, 'io_timeout_s': 5.0,
     'source_address': 'GPIB0::14::INSTR',
     'matrix_resource': 'GPIB0::20::INSTR',
     'matrix_rows': [1, 2, 3, 4], 'rotator_port': 'COM3',

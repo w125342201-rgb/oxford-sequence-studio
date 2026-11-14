@@ -3,14 +3,14 @@ Oxford TeslatronPT Python API
 依据：最新提交的 teslatronpt_gui_v2.py 作为上层需求与机器拓扑的唯一来源。
 
 机器：
-  iTC-VTI   192.168.1.10:7020
+  iTC-VTI   192.168.1.113:7020
     DB6.T1 = VTI
     DB3.P1 = exchange-gas pressure
 
-  iTC-Probe 192.168.1.11:7020
+  iTC-Probe 192.168.1.114:7020
     DB8.T1 = sample/probe
 
-  iPS       192.168.1.12:7020
+  iPS       192.168.1.115:7020
     GRPZ = magnet
 
 温度：

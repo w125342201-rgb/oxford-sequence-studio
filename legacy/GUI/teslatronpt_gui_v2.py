@@ -2,13 +2,13 @@
 """TeslatronPT GUI for Oxford Instruments Mercury iTC/iPS.
 
 Machine topology (two independent iTCs + one iPS, per lab hardware):
-    iTC-VTI   TCPIP0::192.168.1.10::7020::SOCKET
+    iTC-VTI   TCPIP0::192.168.1.113::7020::SOCKET
         VTI bath temperature (background)   : DB6.T1
         Exchange-gas pressure               : DB3.P1
-    iTC-Probe TCPIP0::192.168.1.11::7020::SOCKET
+    iTC-Probe TCPIP0::192.168.1.114::7020::SOCKET
         Probe (sample) temperature          : DB8.T1
         Probe fine temperature-control loop : TSET on probe channel
-    iPS       TCPIP0::192.168.1.12::7020::SOCKET
+    iPS       TCPIP0::192.168.1.115::7020::SOCKET
         Magnet group                        : GRPZ
 
 Physics (lab): the sample rod sits inside the VTI. The VTI provides the
@@ -63,9 +63,9 @@ import tkinter as tk
 from dataclasses import dataclass
 from tkinter import messagebox, ttk
 
-ITC_VTI_HOST = "192.168.1.10"    # VTI bath temperature + exchange-gas pressure
-ITC_PROBE_HOST = "192.168.1.11"  # probe (sample) fine temperature control
-IPS_HOST = "192.168.1.12"        # magnet
+ITC_VTI_HOST = "192.168.1.113"    # VTI bath temperature + exchange-gas pressure
+ITC_PROBE_HOST = "192.168.1.114"  # probe (sample) fine temperature control
+IPS_HOST = "192.168.1.115"        # magnet
 PORT = 7020
 # Module numbers verified against the controllers on the industrial PC.
 VTI_MODULE = "DB6"        # on iTC-VTI (113)
@@ -230,9 +230,9 @@ class MercuryController:
 class Teslatron:
     """Three independent instruments:
 
-      iTC-VTI   (192.168.1.10): VTI bath temperature + exchange-gas pressure
-      iTC-Probe (192.168.1.11): probe/sample temperature + its control loop
-      iPS       (192.168.1.12): magnet (GRPZ)
+      iTC-VTI   (192.168.1.113): VTI bath temperature + exchange-gas pressure
+      iTC-Probe (192.168.1.114): probe/sample temperature + its control loop
+      iPS       (192.168.1.115): magnet (GRPZ)
     """
     def __init__(self):
         # Connect VTI controller first; on any later failure, close the

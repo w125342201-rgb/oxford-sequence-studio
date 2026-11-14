@@ -7,15 +7,15 @@ Based directly on the latest verified TeslatronPT GUI/hardware definition.
 
 Hardware topology
 -----------------
-iTC-VTI   192.168.1.10:7020
+iTC-VTI   192.168.1.113:7020
     DB6.T1  -> VTI bath temperature
     DB3.P1  -> exchange-gas pressure
 
-iTC-Probe 192.168.1.11:7020
+iTC-Probe 192.168.1.114:7020
     DB8.T1  -> sample/probe temperature
     DB8.T1  -> sample temperature control loop
 
-iPS       192.168.1.12:7020
+iPS       192.168.1.115:7020
     GRPZ    -> magnet group
 
 Linked temperature control
@@ -77,9 +77,9 @@ from typing import Callable, Optional
 # Machine configuration
 # ---------------------------------------------------------------------------
 
-ITC_VTI_HOST = "192.168.1.10"
-ITC_PROBE_HOST = "192.168.1.11"
-IPS_HOST = "192.168.1.12"
+ITC_VTI_HOST = "192.168.1.113"
+ITC_PROBE_HOST = "192.168.1.114"
+IPS_HOST = "192.168.1.115"
 MERCURY_PORT = 7020
 
 VTI_MODULE = "DB6"
