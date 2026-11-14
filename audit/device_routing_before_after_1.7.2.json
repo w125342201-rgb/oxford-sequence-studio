@@ -1,0 +1,45 @@
+{
+  "baseline": "Oxford_Sequence_Studio_1.7.1_range_fixed.zip",
+  "before": {
+    "selected_device": "2182a",
+    "step_mode": "pxi",
+    "hardware_preflight": "rejected: 测量步骤 pxi 与已选设备/模式 delta 不符；请分开运行或明确修改步骤",
+    "simulation_status": "completed",
+    "voltage_columns": [
+      "ai0_V",
+      "ai0_X_V",
+      "ai0_Y_V",
+      "ai0_2f_V",
+      "ai0_2f_X_V",
+      "ai0_2f_Y_V",
+      "ai1_V",
+      "ai1_X_V",
+      "ai1_Y_V",
+      "ai1_2f_V",
+      "ai1_2f_X_V",
+      "ai1_2f_Y_V",
+      "ai2_V",
+      "ai2_X_V",
+      "ai2_Y_V",
+      "ai2_2f_V",
+      "ai2_2f_X_V",
+      "ai2_2f_Y_V",
+      "ai3_V",
+      "ai3_X_V",
+      "ai3_Y_V",
+      "ai3_2f_V",
+      "ai3_2f_X_V",
+      "ai3_2f_Y_V"
+    ]
+  },
+  "after": {
+    "selected_device": "2182a",
+    "step_mode": "delta",
+    "hardware_preflight": "accepted",
+    "simulation_status": "completed",
+    "voltage_columns": [
+      "voltage_v"
+    ]
+  },
+  "scope": "Real application callbacks, validation and simulated CSV; no hardware verification."
+}

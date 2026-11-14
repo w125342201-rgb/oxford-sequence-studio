@@ -1,0 +1,15 @@
+{
+  "nidaqmx_version": "1.6.0",
+  "official_descriptors": "passed",
+  "native_calls": [
+    "exists",
+    "channels"
+  ],
+  "range_readback_descriptors": "passed",
+  "range_attribute_ids": [
+    6110,
+    6109,
+    6168
+  ],
+  "hardware_test": false
+}

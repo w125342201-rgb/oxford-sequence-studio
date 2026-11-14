@@ -1,0 +1,135 @@
+{
+  "schema_version": 7,
+  "software": "Oxford Sequence Studio 1.6.3",
+  "simulation": true,
+  "config": {
+    "vti_host": "192.168.1.10",
+    "probe_host": "192.168.1.11",
+    "ips_host": "192.168.1.12",
+    "port": 7020,
+    "io_timeout_s": 5.0,
+    "source_address": "GPIB0::14::INSTR",
+    "matrix_resource": "GPIB0::20::INSTR",
+    "matrix_rows": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "rotator_port": "COM3",
+    "measurement_device": "2182a",
+    "auto_pressure_enabled": true,
+    "auto_pressure_low_mbar": 3.0,
+    "auto_pressure_high_mbar": 10.0,
+    "enable_source": true,
+    "enable_matrix": true,
+    "enable_rotator": false,
+    "matrix_each_point": true,
+    "point_routes": [
+      {
+        "name": "A",
+        "columns": [
+          12,
+          9,
+          11,
+          10
+        ]
+      },
+      {
+        "name": "B",
+        "columns": [
+          8,
+          5,
+          7,
+          6
+        ]
+      }
+    ],
+    "min_temperature_k": 1.5,
+    "max_temperature_k": 300.0,
+    "max_field_t": 14.0,
+    "max_field_rate": 0.237,
+    "max_temperature_rate": 10.0,
+    "max_pressure_mbar": 20.0,
+    "min_angle_deg": 0.0,
+    "max_angle_deg": 360.0,
+    "max_rotation_speed": 1.0,
+    "max_current_a": 5e-05,
+    "compliance_v": 1.0,
+    "matrix_off_delay_s": 0.0,
+    "matrix_settle_s": 0.0,
+    "max_expanded_steps": 100000
+  },
+  "nodes": [
+    {
+      "id": "34de50fcfcc9490788a530adc5f44248",
+      "kind": "sweep",
+      "enabled": true,
+      "params": {
+        "axis": "temperature",
+        "values": [
+          4.0,
+          4.1,
+          4.2
+        ],
+        "rate": 1.0,
+        "tolerance": 0.02,
+        "stable_s": 0.0,
+        "timeout_s": 3600.0
+      },
+      "children": [
+        {
+          "id": "a9cf112acff24ebfb2829940f68bcb9d",
+          "kind": "resistance",
+          "enabled": true,
+          "params": {
+            "mode": "delta",
+            "current_a": 1e-05,
+            "samples": 1,
+            "interval_s": 0.0,
+            "settle_s": 0.2,
+            "nplc": 5.0,
+            "voltage_range_v": 0.1,
+            "delta_delay_s": 0.1,
+            "timeout_s": 60.0,
+            "delta_divisor": 1.0,
+            "frequency_hz": 13.0,
+            "phase_deg": 0.0,
+            "daq_device": "",
+            "daq_channels": [
+              0
+            ],
+            "daq_fs_hz": 51200.0,
+            "daq_duration_s": 1.0,
+            "daq_range_v": 1.0
+          },
+          "children": []
+        }
+      ]
+    }
+  ],
+  "status": "completed",
+  "voltage_columns": {
+    "V_12-9-11-10": {
+      "name": "A",
+      "columns": [
+        12,
+        9,
+        11,
+        10
+      ]
+    },
+    "V_8-5-7-6": {
+      "name": "B",
+      "columns": [
+        8,
+        5,
+        7,
+        6
+      ]
+    }
+  },
+  "error": "",
+  "cleanup_errors": [],
+  "points": 6
+}

@@ -1,0 +1,97 @@
+[
+  {
+    "path": "CHANGELOG_1.7.6.md",
+    "sha256": "df051d10277ab99abaf78a1ae7d21941d683e5bd55977f31624b17ef560c8494",
+    "status": "added"
+  },
+  {
+    "path": "README_使用说明.md",
+    "sha256": "ba27bd5b5e318e6db7bf86eb0786b3d7fbdbcd38bd34e60501ca9fa6b68631ec",
+    "status": "modified"
+  },
+  {
+    "path": "audit/recover_points.py",
+    "sha256": "8e932ff26b3f14646621d4f4a63141a957b5cf5722da4c556b995eb554975ff5",
+    "status": "modified"
+  },
+  {
+    "path": "audit/regression_1.7.6.txt",
+    "sha256": "b7324233744cf807fd294aa3b5ac5b7e4f295f179d86bb36fb92dae2510747ce",
+    "status": "added"
+  },
+  {
+    "path": "legacy/keithely6221_2182A/keithley_6221_2182a_driver.py",
+    "sha256": "f5007b3b13d03227477dabe44639f8a227c52cd9df8efc940651e9fdc7d9d27e",
+    "status": "modified"
+  },
+  {
+    "path": "legacy/oxford/oxford_teslatronpt_api.py",
+    "sha256": "83312d3e88914f4d4f709fa9c4483000ec786f2142824be53783255b84c963f8",
+    "status": "modified"
+  },
+  {
+    "path": "start_windows.bat",
+    "sha256": "a7f1b2e971fda291d1ae325909512376733606cd47388408b60d07fa5a640a0f",
+    "status": "modified"
+  },
+  {
+    "path": "studio/__init__.py",
+    "sha256": "bcc323e278ad96b04a1664d401a7416fba66375ecf1fdd1bef13ff869cd183d5",
+    "status": "modified"
+  },
+  {
+    "path": "studio/backend.py",
+    "sha256": "3e88b706d6d7fdb789734ed486a58bb128c1d599097438ecd1c8c706b5f690eb",
+    "status": "modified"
+  },
+  {
+    "path": "studio/engine.py",
+    "sha256": "cc51c7121b02dc14848e328b98961efa9c9328c76e66ef65ba33aba00aa1c2f3",
+    "status": "modified"
+  },
+  {
+    "path": "studio/gui.py",
+    "sha256": "1ea97027495b640f066c2736d927a1cd985a1ae3903fafa42bb768748d3af4ab",
+    "status": "modified"
+  },
+  {
+    "path": "tests/test_audit_175.py",
+    "sha256": "673093f07570d673fe3816268c12f7a7b478e3fcfe7a67b91570fee4577b3d0a",
+    "status": "modified"
+  },
+  {
+    "path": "tests/test_audit_176.py",
+    "sha256": "6a8302aaa7ea7b810125e9fe966bd9e4408f7a9cd963754c94786cfa11d849f8",
+    "status": "added"
+  },
+  {
+    "path": "tests/test_display_and_electrode_columns.py",
+    "sha256": "0836f1aaeb615db28ca1301052251a378efeb06b21e9e1a16d9ae7256c235f5d",
+    "status": "modified"
+  },
+  {
+    "path": "tests/test_engine.py",
+    "sha256": "06517bdb591baac9a90a67f72e82367c132ff9b3aaef2e595274a12c48dc4355",
+    "status": "modified"
+  },
+  {
+    "path": "tests/test_harmonic_selection.py",
+    "sha256": "ef41c75505893b3bb684d6332ce11d462be3d0ee8eeaed8c7b04726d74e2f508",
+    "status": "modified"
+  },
+  {
+    "path": "tests/test_pxi_audit.py",
+    "sha256": "0cfba2d77e715dea1c33e86642df18bd9561335e272ce042b55679806f6421ad",
+    "status": "modified"
+  },
+  {
+    "path": "tests/test_pxi_physical_channels.py",
+    "sha256": "8c60f74791059890cb26bfc3f38b177222490ef9f0590cb8cfc4b0c2ea1e8f3e",
+    "status": "modified"
+  },
+  {
+    "path": "tests/test_revision12.py",
+    "sha256": "da5a627a1c0d11888f12af7841d01c0e37233e6ee6a9e6f529b31c3dc65ea1ad",
+    "status": "modified"
+  }
+]

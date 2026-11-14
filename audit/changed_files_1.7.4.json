@@ -1,0 +1,90 @@
+{
+  "changes": [
+    {
+      "file": "CHANGELOG_1.7.4.md",
+      "old_sha256": null,
+      "new_sha256": "66347b86a0753493d9e960bfc29dc4f5e982cba2a49d3f7caf43dcb71bb7b738"
+    },
+    {
+      "file": "README_使用说明.md",
+      "old_sha256": "8e719fad7a11d731ef825f3aebb9c89a2b0ed3f4ece99adb9600def3f0b2910e",
+      "new_sha256": "6f31b9fdd17d06e3a22ea7cf9dabc219e50c0386e3c39fbefe1a8b33469155dc"
+    },
+    {
+      "file": "audit/numeric_results_1.7.4.json",
+      "old_sha256": null,
+      "new_sha256": "8c98ddb948e75aff75bb327ac9f718f4b54aaee597ae6b6ddb4ff16f1b8525c4"
+    },
+    {
+      "file": "audit/recover_points.py",
+      "old_sha256": "00539df71b40babef691ae888dd4c66d92f0c4a5b6b88c89f15bd71a137dc4e4",
+      "new_sha256": "77f8516c9abe57240980992c3833a74cec9eb323821f575a980634a6fa9b899d"
+    },
+    {
+      "file": "audit/regression_1.7.4.txt",
+      "old_sha256": null,
+      "new_sha256": "3fd4f54615daa68e58099cb2451d57224a122b104565ab083eee50559bacad8d"
+    },
+    {
+      "file": "legacy/pxi4462/pxi4462_lockin.py",
+      "old_sha256": "968a3f0f1aa88106d0995e7ec869163f357d94622b34c790c4757a6908ee1ea1",
+      "new_sha256": "2cc2980ab2cbfff57309dfa7c8d238a47818a7b15aa263c690b77c797021bf5c"
+    },
+    {
+      "file": "studio/backend.py",
+      "old_sha256": "965b0b4c854512f4eac43164998daec40b7cacb419b61ac7729fa291d9949c25",
+      "new_sha256": "37834906e163169d52444b4de040ad88d0d94430b7d4a03eb578892b8e5f5660"
+    },
+    {
+      "file": "studio/engine.py",
+      "old_sha256": "eb2b86ee8356c6bbb0781d7b06e958388570a6f8cffa262ca3d95b7462b6cbe5",
+      "new_sha256": "57c616c3b2e40ddcd84668b9ca38ec9e956571a734515dd4a585c606995a09f9"
+    },
+    {
+      "file": "studio/gui.py",
+      "old_sha256": "ba23c78a6f3ecff0f804495c8121269a4e3d4cf96ce49f8db16adba248285d01",
+      "new_sha256": "eda8aae4b9a28ff154714105c831426486932a522cb47bcf49b9225380c1d6ac"
+    },
+    {
+      "file": "studio/instrument_options.py",
+      "old_sha256": "07e6de11da13bd700f59dc805390dafa47adf0713230b1a31777b18347712088",
+      "new_sha256": "647e5f61cdd0bfe3ffd787f54996a8b8bd3dc81e8faa71603c8ed81cbddce5e2"
+    },
+    {
+      "file": "studio/model.py",
+      "old_sha256": "fe06cb95e370238593e77ffbfa060a7f7fdb0d0e05bdc1f34ad53d1060bcbb32",
+      "new_sha256": "ae2395db80009e34cd4ae3dd60894a9c127e37584617b791af5f0fd48a35d6b9"
+    },
+    {
+      "file": "tests/test_audit_174.py",
+      "old_sha256": null,
+      "new_sha256": "a6dd7c39bae4fc624ad56f02b9741f48155f043cc3a693fb0ccf8733a0cf577e"
+    },
+    {
+      "file": "tests/test_display_and_electrode_columns.py",
+      "old_sha256": "613a525512afe0ab25cc360e6f44baff9be58929dfdcaf95be655fe469c205b1",
+      "new_sha256": "0b00ba351820fb655c51a5e8a9c978906407fd954c350bbaaab1e63339e0cdf1"
+    },
+    {
+      "file": "tests/test_harmonic_selection.py",
+      "old_sha256": "24bc35f9e42c7cb10db01f6aa0f7f27084e960f13673234b2e2ada9c49310989",
+      "new_sha256": "a05fc2fa5c03e15c07e11598fe341c967c67a7aef4882fcf2883aab2ac584e1a"
+    },
+    {
+      "file": "tests/test_precision_thermal.py",
+      "old_sha256": "23b9201ac345a66d0d0e5033f5bae18f9ddc13558d5304b8b93c0fb2fe111657",
+      "new_sha256": "3826e8ba8ca8186aa78e67ac28a83e655774388740ca617ea8b773ef6996c4c6"
+    },
+    {
+      "file": "tests/test_pxi_audit.py",
+      "old_sha256": "24fd0d6af66ad214b25ac40cc5c6d419e986848c93a7b1e8b659c589929a5433",
+      "new_sha256": "e190be22781894852b9bf910437324b1ecb320ea126d259f8c840d1c81c2be15"
+    },
+    {
+      "file": "tests/test_pxi_physical_channels.py",
+      "old_sha256": "6ae910cb38110cf3662716a9f21536cc60ff113b8be16a489e8d2fd36d5333e1",
+      "new_sha256": "176c7b23f359dc68cb12c1160b3a2f52943cfb0f08fcfce2d26bdfd2ca19c226"
+    }
+  ],
+  "source_driver_unchanged": true
+}

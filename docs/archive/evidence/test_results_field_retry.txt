@@ -1,0 +1,4 @@
+Existing suite: 73 tests, OK (1 skipped).
+New field retry tests: 5 tests, OK.
+Checks: normal start, RTOS retry after 60 s, retry exhaustion, FSET retry after 60 s, stop interrupts cooldown.
+Hardware not connected for this validation.

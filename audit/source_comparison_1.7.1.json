@@ -1,0 +1,16 @@
+{
+  "baseline_zip_sha256": "9c60138395e2f6ae5094ec15dd92342ce8a1d20b34d9369cea2a554f2b023aed",
+  "changed_existing_files": [
+    "README_使用说明.md",
+    "audit/verify_ni_api.py",
+    "legacy/pxi4462/pxi4462_lockin.py",
+    "studio/engine.py",
+    "studio/gui.py",
+    "studio/instrument_options.py",
+    "studio/model.py"
+  ],
+  "unchanged_driver_sha256": {
+    "legacy/keithely6221_2182A/keithley_6221_2182a_driver.py": "c6768f2513bbad24f5c9ec4a660491ee9c0386558b9e47a51fe8d3c68b91d23c"
+  },
+  "delta_branch_AST_unchanged": true
+}

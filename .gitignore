@@ -1,0 +1,18 @@
+# Python 字节码
+__pycache__/
+*.py[cod]
+*.pyo
+
+# 运行产物（不纳入版本库；数据请另行备份）
+/data/
+simulation_data/
+
+# 临时文件
+*.tmp
+~$*
+*.log
+
+# 工具本地状态（仅忽略仓库根目录；docs/archive 下的历史记录需要入库）
+/.workbuddy/
+.vscode/
+.idea/
