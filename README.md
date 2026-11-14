@@ -7,7 +7,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-field--tested-brightgreen)](#项目状态)
 
-> **Oxford Sequence Studio** is a Python/Tkinter measurement sequencer for cryogenic transport and magnetoresistance measurements on an **Oxford Instruments TeslatronPT** system. Nested *temperature × magnetic field × rotator angle × electrode-set* sweeps are defined as a reproducible JSON sequence; the engine waits for each setpoint, switches electrode routes, acquires data point by point, and writes three cross-checkable outputs (`data.csv`, `events.jsonl`, `run.json`).
+> **Oxford Sequence Studio** is a Python/Tkinter measurement sequencer for cryogenic transport and magnetoresistance measurements on an **Oxford Instruments TeslatronPT** system (*now Quantum Design Oxford*). Nested *temperature × magnetic field × rotator angle × electrode-set* sweeps are defined as a reproducible JSON sequence; the engine waits for each setpoint, switches electrode routes, acquires data point by point, and writes three cross-checkable outputs (`data.csv`, `events.jsonl`, `run.json`).
 >
 > Measurement backends: **Keithley 6221 + 2182A** (Delta mode) or **NI PXI-4462** four-channel digital lock-in. Instrument control over **VISA / GPIB / serial / TCP**: Oxford **iTC** and **iPS** Mercury controllers, relay matrix switching, rotator. Lab automation for physics instrumentation, with explicit safety limits for magnet ramping and current sourcing.
 
