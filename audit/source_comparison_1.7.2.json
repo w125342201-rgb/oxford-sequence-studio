@@ -1,0 +1,18 @@
+{
+  "baseline_zip_sha256": "8d4b45d0a5bfcc32ea0b947740db2a5a510ceb41e933b2a6c2faf2f548fec213",
+  "changed_existing_files": [
+    "README_使用说明.md",
+    "studio/backend.py",
+    "studio/engine.py",
+    "studio/gui.py",
+    "studio/model.py",
+    "tests/test_engine.py",
+    "tests/test_revision12.py",
+    "tests/test_unlimited_wait.py",
+    "tests/test_xy_phase.py"
+  ],
+  "unchanged_driver_sha256": {
+    "legacy/keithely6221_2182A/keithley_6221_2182a_driver.py": "c6768f2513bbad24f5c9ec4a660491ee9c0386558b9e47a51fe8d3c68b91d23c"
+  },
+  "delta_branch_AST_unchanged": true
+}

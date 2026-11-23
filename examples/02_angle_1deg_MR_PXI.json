@@ -1,0 +1,130 @@
+{
+  "schema_version": 7,
+  "config": {
+    "vti_host": "192.168.1.113",
+    "probe_host": "192.168.1.114",
+    "ips_host": "192.168.1.115",
+    "port": 7020,
+    "io_timeout_s": 5,
+    "source_address": "GPIB0::14::INSTR",
+    "matrix_resource": "GPIB0::20::INSTR",
+    "matrix_rows": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "rotator_port": "COM3",
+    "enable_source": true,
+    "enable_matrix": false,
+    "enable_rotator": false,
+    "matrix_each_point": true,
+    "point_routes": [
+      {
+        "name": "通道 A",
+        "columns": [
+          12,
+          9,
+          11,
+          10
+        ]
+      },
+      {
+        "name": "通道 B",
+        "columns": [
+          8,
+          5,
+          7,
+          6
+        ]
+      }
+    ],
+    "min_temperature_k": 1.5,
+    "max_temperature_k": 300,
+    "max_field_t": 14,
+    "max_field_rate": 0.237,
+    "max_temperature_rate": 10,
+    "max_pressure_mbar": 20,
+    "min_angle_deg": 0,
+    "max_angle_deg": 360,
+    "max_rotation_speed": 1,
+    "max_current_a": 5e-05,
+    "compliance_v": 1,
+    "matrix_settle_s": 0.5,
+    "max_expanded_steps": 100000,
+    "measurement_device": "pxi",
+    "auto_pressure_enabled": true,
+    "auto_pressure_low_mbar": 3.0,
+    "auto_pressure_high_mbar": 10.0,
+    "matrix_off_delay_s": 0.5,
+    "link_vti_temperature": true
+  },
+  "nodes": [
+    {
+      "id": "2a43992928c94ab6b11d125676d807cb",
+      "kind": "sweep",
+      "enabled": true,
+      "params": {
+        "axis": "angle",
+        "values": [
+          0,
+          1,
+          2
+        ],
+        "rate": 0.5,
+        "tolerance": 0.05,
+        "stable_s": 0,
+        "timeout_s": 3600
+      },
+      "children": [
+        {
+          "id": "076061918dbe43e3a90a0a37dc83bb89",
+          "kind": "sweep",
+          "enabled": true,
+          "params": {
+            "axis": "field",
+            "values": [
+              0,
+              0.02,
+              0
+            ],
+            "rate": 0.1,
+            "tolerance": 0.0002,
+            "stable_s": 0,
+            "timeout_s": 3600
+          },
+          "children": [
+            {
+              "id": "694d3e2146a04426874faf2b97e40f57",
+              "kind": "resistance",
+              "enabled": true,
+              "params": {
+                "mode": "pxi",
+                "current_a": 1e-05,
+                "samples": 1,
+                "interval_s": 0,
+                "settle_s": 0.2,
+                "nplc": 5,
+                "voltage_range_v": 0.1,
+                "delta_delay_s": 0.1,
+                "timeout_s": 60,
+                "delta_divisor": 1.0,
+                "frequency_hz": 13,
+                "phase_deg": 0,
+                "daq_device": "",
+                "daq_channels": [
+                  0
+                ],
+                "daq_fs_hz": 51200,
+                "daq_duration_s": 1,
+                "daq_range_v": 1
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "migration_notes": " Delta已移除额外除2，新采集按V/I保存电阻；已有数据文件不变。"
+}

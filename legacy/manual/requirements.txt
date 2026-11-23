@@ -1,0 +1,5 @@
+pyvisa>=1.11
+# Optional but recommended VISA backend if no NI-VISA is installed:
+# pyvisa-py>=0.6
+pyserial>=3.5
+# (rotator/ 样品旋转杆串口驱动；GUI 与 oxford API 不需要)

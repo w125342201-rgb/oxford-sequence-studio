@@ -1,0 +1,87 @@
+[
+  {
+    "file": "CHANGELOG_1.7.5.md",
+    "old_sha256": null,
+    "new_sha256": "3d76f238e4fee05127378ddf4ca6d3c36f29972ec9ffbb62ef3496afe1d4cc50"
+  },
+  {
+    "file": "README_使用说明.md",
+    "old_sha256": "6f31b9fdd17d06e3a22ea7cf9dabc219e50c0386e3c39fbefe1a8b33469155dc",
+    "new_sha256": "c1cea00b1b6dd75a4704b99c9effa624ad95a04db15927dde25814d635a8eb01"
+  },
+  {
+    "file": "audit/numeric_results_1.7.5.json",
+    "old_sha256": null,
+    "new_sha256": "8c98ddb948e75aff75bb327ac9f718f4b54aaee597ae6b6ddb4ff16f1b8525c4"
+  },
+  {
+    "file": "audit/recover_points.py",
+    "old_sha256": "77f8516c9abe57240980992c3833a74cec9eb323821f575a980634a6fa9b899d",
+    "new_sha256": "9fcfdd2fa12028ae73758d9f55ab566a4a33213f8eceba975934a6713d7da40d"
+  },
+  {
+    "file": "audit/regression_1.7.5.txt",
+    "old_sha256": null,
+    "new_sha256": "e047ac6a7ec5a5078d43b54f49056b093be821863c68f5d8b855c07cacdda66a"
+  },
+  {
+    "file": "legacy/keithely6221_2182A/keithley_6221_2182a_driver.py",
+    "old_sha256": "77e6873c922aecb3be92dc2be9a8b15e593e586a24536ba6c6fa96aa341cb823",
+    "new_sha256": "d2fc13d7c572a00d0dff978fc69b856a429cd1fde66e2f8d8673e7f114efb8fa"
+  },
+  {
+    "file": "legacy/oxford/oxford_teslatronpt_api.py",
+    "old_sha256": "91f3c82d3b66a25205e6f219febcdddac878400c94bce40c7d0434df293e3ddc",
+    "new_sha256": "f5e11a8b88dd09e0a44a062b0fc5362f97751abef947ac3c60d5ef70644bd324"
+  },
+  {
+    "file": "studio/backend.py",
+    "old_sha256": "37834906e163169d52444b4de040ad88d0d94430b7d4a03eb578892b8e5f5660",
+    "new_sha256": "405f95450f9db22d088837d1694f64c1b42b05ea4946efda5805f9c65afcab6e"
+  },
+  {
+    "file": "studio/engine.py",
+    "old_sha256": "57c616c3b2e40ddcd84668b9ca38ec9e956571a734515dd4a585c606995a09f9",
+    "new_sha256": "f7cc0ab4506fd76ea51d81b0b251307073d2b4d9705834c8d475981da9aed523"
+  },
+  {
+    "file": "studio/gui.py",
+    "old_sha256": "eda8aae4b9a28ff154714105c831426486932a522cb47bcf49b9225380c1d6ac",
+    "new_sha256": "35bcda6c39c663eda585278a53edca636b162a3e689831f58289c544f62761c0"
+  },
+  {
+    "file": "studio/model.py",
+    "old_sha256": "ae2395db80009e34cd4ae3dd60894a9c127e37584617b791af5f0fd48a35d6b9",
+    "new_sha256": "d51a5a8e8d09e3603e430e62ccb04eef7c0e52096e5d7b7dfc9ab9cea738fb70"
+  },
+  {
+    "file": "tests/test_audit_175.py",
+    "old_sha256": null,
+    "new_sha256": "68d0b409f6e79484b9de12d8a07be36df560c31c1857a204e994e7343a5ab04e"
+  },
+  {
+    "file": "tests/test_display_and_electrode_columns.py",
+    "old_sha256": "0b00ba351820fb655c51a5e8a9c978906407fd954c350bbaaab1e63339e0cdf1",
+    "new_sha256": "8b302df26c4b3d318c05ff4243e4b45a3437881ce10637d7872b56e1f2aae7cd"
+  },
+  {
+    "file": "tests/test_harmonic_selection.py",
+    "old_sha256": "a05fc2fa5c03e15c07e11598fe341c967c67a7aef4882fcf2883aab2ac584e1a",
+    "new_sha256": "02c39773bf8b720ecf78bedda9cc936d9fb6410f5e9e358880e25fd4c157e215"
+  },
+  {
+    "file": "tests/test_pxi_audit.py",
+    "old_sha256": "e190be22781894852b9bf910437324b1ecb320ea126d259f8c840d1c81c2be15",
+    "new_sha256": "7723014ef9f9220c82e23d226cded87f65ec2cea5cbb2bdb7d633c881c13ac98"
+  },
+  {
+    "file": "tests/test_pxi_physical_channels.py",
+    "old_sha256": "176c7b23f359dc68cb12c1160b3a2f52943cfb0f08fcfce2d26bdfd2ca19c226",
+    "new_sha256": "ba20b3fb0e7def0295f5e5702974aa64b4c194c8ee0a5b60c0daec87c8b43ca6"
+  },
+  {
+    "file": "tests/test_reliability_173.py",
+    "old_sha256": "0d81f4a5931adbc49d79d3dae68e5fbf0e2f30f882ba6c07fef6b39b8b935c6f",
+    "new_sha256": "070b63abc2296dbb5b3f653af4f5564073d01ebf4eff43d16dc5d923894ef514"
+  }
+]
